@@ -12,5 +12,7 @@ Berisi model **".h5"**  U-Net dan L-U-Net
 
 # Identitas Pemilik 
 Email: anton.wijaya@students.untidar.ac.id
+
        asangwijaya2017@gmail.com
+
 No Hp: +6282221823160
