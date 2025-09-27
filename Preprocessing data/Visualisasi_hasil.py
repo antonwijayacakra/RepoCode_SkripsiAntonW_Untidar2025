@@ -27,19 +27,19 @@ for filename in os.listdir(input_folder):
         with open(json_path, 'r') as f:
             data = json.load(f)
 
-        # Gambar anotasi polygon dan titik
+        # Gambar anotasi polygon dan titik 
         for shape in data.get('shapes', []):
-            label = shape['label']
-            points = shape['points']
-            pts = np.array(points, np.int32).reshape((-1, 1, 2))
+            label = shape['label'] # Label dari anotasi
+            points = shape['points'] # Titik-titik polygon
+            pts = np.array(points, np.int32).reshape((-1, 1, 2)) # Ubah ke format yang sesuai untuk polylines
             
-            # Gambar garis polygon
-            cv2.polylines(image_rgb, [pts], isClosed=True, color=(200, 0, 0), thickness=2)
+            # Gambar garis polygon dengan warna merah tua
+            cv2.polylines(image_rgb, [pts], isClosed=True, color=(200, 0, 0), thickness=2) 
             
-            # Gambar titik-titik
+            # Gambar titik-titik berdasarkan koordinat
             for point in points:
                 x, y = int(point[0]), int(point[1])
-                cv2.circle(image_rgb, (x, y), radius=3, color=(139, 0, 0), thickness=-1)
+                cv2.circle(image_rgb, (x, y), radius=3, color=(139, 0, 0), thickness=-1) # Titik berwarna merah tua
 
         # Simpan hasil
         output_path = os.path.join(output_folder, base_name + '_visualisasi.PNG')
