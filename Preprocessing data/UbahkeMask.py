@@ -13,7 +13,7 @@ xray_dir = r'X-Ray' # direktori untuk menyimpan gambar X-Ray
 
 # Fungsi untuk membuat nama file mask dengan mengganti awalan dengan "mask" dan mempertahankan nomornya
 def buat_nama_mask(nama_file_json): 
-    match = re.search(r'\((\d+)\)', nama_file_json) # mencari pola nomor dalam tanda kurung
+    match = re.search(r'\((\d+)\)', nama_file_json) # mencari pola nomor dalam tanda kurung (d+)
     if match: # jika ditemukan nomor dalam tanda kurung
         nomor = match.group(1) # ambil nomor tersebut
         return f'mask_Data ({nomor}).PNG' # buat nama file mask dengan format "mask_Data (nomor).PNG"

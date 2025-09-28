@@ -5,7 +5,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # ========== KONFIGURASI ==========
-input_folder = 'Visualisasi Hasil\Data dan JSON_THORAX'           # Folder input berisi .png dan .json
+input_folder = 'Visualisasi Hasil\Data dan JSON_THORAX'          # Folder input berisi .png dan .json
 output_folder = 'Visualisasi Hasil\Hasil'        # Folder output visualisasi
 
 
