@@ -15,5 +15,5 @@ Email: anton.wijaya@students.untidar.ac.id atau  asangwijaya2017@gmail.com
 No Hp: +6282221823160
 
 # SOFTFILE SKRIPSI
-SKRIPSI**PERBANDINGAN PERFORMA KOMPUTASI PADA MODEL U-NET DAN L-UNET UNTUK SEGMENTASI PARU-PARU** dapat diakses melalui Repositori UNTIDAR pada [link ini] (http://repositori.untidar.ac.id/?p=show_detail&id=20719)
+SKRIPSI**PERBANDINGAN PERFORMA KOMPUTASI PADA MODEL U-NET DAN L-UNET UNTUK SEGMENTASI PARU-PARU** dapat diakses melalui Repositori UNTIDAR pada [link ini](http://repositori.untidar.ac.id/?p=show_detail&id=20719)
 
